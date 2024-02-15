@@ -1,1 +1,1 @@
-# Small-footprint-keyword-spotting_-SF-KWS-
+# Small-footprint-keyword-spotting (SF-KWS)
