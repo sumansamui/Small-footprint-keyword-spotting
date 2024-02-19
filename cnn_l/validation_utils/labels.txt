@@ -1,0 +1,5 @@
+_silence_
+_unknown_
+on
+off
+stop

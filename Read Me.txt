@@ -1,0 +1,2 @@
+Download dataset for link "http://download.tensorflow.org/data/speech_commands_v0.02.tar.gz"
+Then unzip and save it at Dataset folder.
