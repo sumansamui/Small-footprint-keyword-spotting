@@ -86,13 +86,13 @@ def main():
     # Specify the filename for the saved audio
     output_wav_filename = FLAGS.wav               #"recorded_audio.wav"
     # Set the duration of each recording in seconds
-    recording_duration = 1
+    recording_duration = 2
     model_size = os.path.getsize(FLAGS.keras_file_path)
     window_size_samples = int(FLAGS.sample_rate * FLAGS.window_size_ms / 1000)
     window_stride_samples = int(FLAGS.sample_rate * FLAGS.window_stride_ms / 1000)
     model = tf.keras.models.load_model(FLAGS.keras_file_path)
 
-    while True :        #True:
+    while 1:        #True:
 
         # Record and save audio
         record_and_save(output_wav_filename, duration=recording_duration)
@@ -105,23 +105,12 @@ def main():
         #inference_time = end_time - start_time
         # Sort to show labels in order of confidence
         top_k = predictions[0].argsort()[-1:][::-1]
-
         for node_id in top_k:
             human_string = load_labels(FLAGS.labels)[int(node_id)]
             score = predictions[0,node_id]
-            print(f'\tmodel predicted: {human_string} with score {score:.5f}')
+            print(f'model predicted: {human_string} with score {score:.5f}')
             #print(f"Inference time: {inference_time:.4f} seconds")
-            
-        if human_string == "on" :
-            print()
-            print("\t+#@+#@+#@+       Welcome     +#@+#@+#@+")
-        if human_string == "off" :
-            print()
-            print("\t+#@+#@+#@+      Thank you     +#@+#@+#@+")
-        if human_string == "stop" :
-            print()
-            print("\t+#@+#@+#@+   have a Nice day   +#@+#@+#@+")
-            break       
+            #print('Model size:', model_size)
         #input("Press Enter to record the next audio or Ctrl+C to exit.")
 #############
 # _silence_ #
@@ -135,11 +124,11 @@ def main():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '--wav', type=str, default='microphone.wav',    
+        '--wav', type=str, default='microphone.wav',    #'E:/OneDrive - NIT Durgapur/Program/ML_ZOO/ML-zoo-master/models/keyword_spotting/train/micronet_small/New folder/microphone.wav',  #'/home/ec.gpu/Desktop/Soumen/train/ml_zoo_kws/go_12.wav',  on_9.wav   # ',
         help='Audio file to be identified.')
     parser.add_argument(
-        '--labels', type=str, default='labels.txt',
-          help='Path to file containing labels.') 
+        '--labels', type=str, default='labels.txt',#'E:/OneDrive - NIT Durgapur/Program/ML_ZOO\ML-zoo-master/models/keyword_spotting/train/cnn_l/validation_utils/labels.txt',
+          help='Path to file containing labels.') #/home/ec.gpu/Desktop/Soumen/train/cnn_l/validation_utils/labels.txt'
     parser.add_argument(
         '--sample_rate',
         type=int,
@@ -163,7 +152,9 @@ if __name__ == '__main__':
     parser.add_argument(
         '--keras_file_path',
         type=str,
-        default='cnn.h5',
+        default='cnn.h5',#'E:/OneDrive - NIT Durgapur/Program/ML_ZOO/ML-zoo-master/models/keyword_spotting/train/cnn_l/keras/cnn.h5',
         help='Path to the .h5 Keras model file to use for testing.')
     FLAGS, unparsed = parser.parse_known_args()
     main()
+
+
