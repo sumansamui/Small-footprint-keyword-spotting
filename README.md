@@ -5,11 +5,11 @@ This repository provides the experimental codes and implementation resources for
 📄 **"Advances in Small-Footprint Keyword Spotting: A Comprehensive Review of Efficient Models and Algorithms"**  
 👥 **Soumen Garai, Suman Samui**  
 🏛️ *Department of Electronics and Communication Engineering, National Institute of Technology, Durgapur, India*  
-📅 *2025*
+
 
 ---
 
-## 🧠 Abstract
+## Abstract
 
 Small-Footprint Keyword Spotting (SF-KWS) has gained popularity in today’s landscape of smart voice-activated devices, smartphones, and Internet of Things (IoT) applications. This surge is attributed to the advancements in Deep Learning, enabling the identification of predefined words or keywords from a continuous stream of words.
 
@@ -41,6 +41,23 @@ Next, clone this project by opening a terminal and typing the following commands
 ## References:
 
 S. Garai and S. Samui, "Exploring TinyML Frameworks for Small-Footprint Keyword Spotting: A Concise Overview," 2024 International Conference on Signal Processing and Communications (SPCOM), Bangalore, India, 2024, pp. 1-5, doi: 10.1109/SPCOM60851.2024.10631631.
+
+
+## Citation
+
+If you use this work, please cite:
+
+```bibtex
+@article{GARAI2026134028,
+  title = {Advances in Small-Footprint Keyword Spotting for TinyML: A Comprehensive Review of Efficient Models and Algorithms},
+  journal = {Neurocomputing},
+  volume = {695},
+  pages = {134028},
+  year = {2026},
+  issn = {0925-2312},
+  doi = {10.1016/j.neucom.2026.134028},
+  author = {Soumen Garai and Suman Samui}
+}
 
 ### For queries and further information:
 
