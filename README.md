@@ -1,47 +1,55 @@
-# Advances in Small-Footprint Keyword Spotting: A Comprehensive Review of Efficient Models and Algorithms
+# Advances in Small-Footprint Keyword Spotting for TinyML: A Comprehensive Review of Efficient Models and Algorithms
 
-This repository provides the experimental codes and implementation resources for the paper:
+This repository provides experimental codes, implementation resources, and supplementary materials related to the paper:
 
-📄 **"Advances in Small-Footprint Keyword Spotting: A Comprehensive Review of Efficient Models and Algorithms"**  
+📄 **Advances in Small-Footprint Keyword Spotting for TinyML: A Comprehensive Review of Efficient Models and Algorithms**  
 👥 **Soumen Garai, Suman Samui**  
-🏛️ *Department of Electronics and Communication Engineering, National Institute of Technology, Durgapur, India*  
+🏛️ *Department of Electronics and Communication Engineering, National Institute of Technology Durgapur, India*  
 
+📚 Published in **Neurocomputing (2026)**  
+🔗 DOI: https://doi.org/10.1016/j.neucom.2026.134028
 
 ---
 
 ## Abstract
 
-Small-Footprint Keyword Spotting (SF-KWS) has gained popularity in today’s landscape of smart voice-activated devices, smartphones, and Internet of Things (IoT) applications. This surge is attributed to the advancements in Deep Learning, enabling the identification of predefined words or keywords from a continuous stream of words.
+Small-Footprint Keyword Spotting (SF-KWS) has gained significant attention in smart voice-enabled devices, smartphones, and Internet of Things (IoT) applications. Recent advances in deep learning have enabled efficient detection of predefined keywords from continuous speech streams.
 
-To implement the SF-KWS model on edge devices with low power and limited memory in real-world scenarios, an efficient Tiny Machine Learning (TinyML) framework is essential. In this study, we explore seven distinct categories of techniques, namely:
+Deploying SF-KWS systems on resource-constrained edge devices requires efficient Tiny Machine Learning (TinyML) frameworks with low memory footprint and low power consumption. This work provides a comprehensive review of seven major categories of techniques for efficient SF-KWS design:
 
-- **Model Architecture**
+- **Model Architectures**
 - **Learning Techniques**
 - **Model Compression**
 - **Attention-Aware Architectures**
 - **Feature Optimization**
-- **Neural Network Search**
+- **Neural Architecture Search**
 - **Hybrid Approaches**
 
-This comprehensive overview will serve as a valuable resource for those looking to understand, utilize, or contribute to the field of SF-KWS. The analysis enables the identification of potential research directions, encompassing insights from automatic speech recognition research and those relevant to spoken SF-KWS.
+The review highlights important research trends, implementation strategies, and future research directions in TinyML-based SF-KWS systems.
 
 ---
 
-## Experiment setup:
+## Repository Setup
 
+Clone the repository and install the required dependencies:
 
-Next, clone this project by opening a terminal and typing the following commands (do not type the first `$` signs on each line, they just indicate that these are terminal commands):
+```bash
+git clone https://github.com/sumansamui/Small-footprint-keyword-spotting.git
 
-    $ git clone https://github.com/sumansamui/Small-footprint-keyword-spotting.git
-    
-    $ pip install -r requirements.txt
+cd Small-footprint-keyword-spotting
 
-------------------------------------------------------
+pip install -r requirements.txt
+```
 
-### For queries and further information:
+---
 
-please contact: ssamui.ece@nitdgp.ac.in
+## Contact
 
+For queries, suggestions, or collaborations, please contact:
+
+📧 **ssamui.ece@nitdgp.ac.in**
+
+---
 
 ## Citation
 
@@ -71,6 +79,8 @@ If you use this work, please cite:
 }
 ```
 
+---
 
- 
-### © 2025 Suman Samui All Rights Reserved 
+## License
+
+© 2026 Suman Samui. All Rights Reserved.
