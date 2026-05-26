@@ -38,9 +38,9 @@ Next, clone this project by opening a terminal and typing the following commands
 
 ------------------------------------------------------
 
-## References:
+### For queries and further information:
 
-S. Garai and S. Samui, "Exploring TinyML Frameworks for Small-Footprint Keyword Spotting: A Concise Overview," 2024 International Conference on Signal Processing and Communications (SPCOM), Bangalore, India, 2024, pp. 1-5, doi: 10.1109/SPCOM60851.2024.10631631.
+please contact: ssamui.ece@nitdgp.ac.in
 
 
 ## Citation
@@ -56,11 +56,21 @@ If you use this work, please cite:
   year = {2026},
   issn = {0925-2312},
   doi = {10.1016/j.neucom.2026.134028},
+  url = {https://www.sciencedirect.com/science/article/pii/S0925231226014268},
   author = {Soumen Garai and Suman Samui}
 }
 
-### For queries and further information:
+@inproceedings{GARAI2024SPCOM,
+  author = {Soumen Garai and Suman Samui},
+  title = {Exploring TinyML Frameworks for Small-Footprint Keyword Spotting: A Concise Overview},
+  booktitle = {2024 International Conference on Signal Processing and Communications (SPCOM)},
+  year = {2024},
+  pages = {1--5},
+  address = {Bangalore, India},
+  doi = {10.1109/SPCOM60851.2024.10631631}
+}
+```
 
-please contact: ssamui.ece@nitdgp.ac.in
+
  
 ### © 2025 Suman Samui All Rights Reserved 
